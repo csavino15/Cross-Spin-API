@@ -1,0 +1,21 @@
+[
+  {
+    "ContainingType": "Api.Endpoints.V1.Levels.Today.GetTodaysLevelEndpoint\u002B\u003C\u003Ec",
+    "Method": "\u003CMapEndpoint\u003Eb__0_0",
+    "RelativePath": "api/v1/levels/today",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Levels"
+    ]
+  }
+]

@@ -1,0 +1,124 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\JopatGames.CrossSpin.AppHost\\JopatGames.CrossSpin.AppHost.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\JopatGames.CrossSpin.AppHost\\JopatGames.CrossSpin.AppHost.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\JopatGames.CrossSpin.AppHost\\JopatGames.CrossSpin.AppHost.csproj",
+        "projectName": "JopatGames.CrossSpin.AppHost",
+        "projectPath": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\JopatGames.CrossSpin.AppHost\\JopatGames.CrossSpin.AppHost.csproj",
+        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\JopatGames.CrossSpin.AppHost\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Aspire.Dashboard.Sdk.win-x64": {
+              "target": "Package",
+              "version": "[9.4.1, )",
+              "autoReferenced": true
+            },
+            "Aspire.Hosting.AppHost": {
+              "target": "Package",
+              "version": "[9.4.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Aspire.Hosting.Orchestration.win-x64": {
+              "target": "Package",
+              "version": "[9.4.1, )",
+              "autoReferenced": true
+            },
+            "Aspire.Hosting.Redis": {
+              "target": "Package",
+              "version": "[9.4.1, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Asp.Versioning.Mvc": "8.1.0",
+            "Asp.Versioning.Mvc.ApiExplorer": "8.1.0",
+            "Aspire.Hosting.AppHost": "9.4.1",
+            "Aspire.Hosting.Redis": "9.4.1",
+            "Aspire.StackExchange.Redis.DistributedCaching": "9.4.1",
+            "Azure.Storage.Blobs": "12.25.0",
+            "MediatR": "13.0.0",
+            "Microsoft.AspNetCore.OpenApi": "9.0.4",
+            "Microsoft.Extensions.Caching.Hybrid": "9.8.0",
+            "Microsoft.Extensions.Configuration.Abstractions": "9.0.8",
+            "Microsoft.Extensions.DependencyInjection": "9.0.8",
+            "Microsoft.Extensions.Http.Polly": "9.0.8",
+            "Microsoft.Extensions.Http.Resilience": "9.0.0",
+            "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.8",
+            "Microsoft.Extensions.ServiceDiscovery": "9.0.0",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.9.0",
+            "OpenTelemetry.Extensions.Hosting": "1.9.0",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.9.0",
+            "OpenTelemetry.Instrumentation.Http": "1.9.0",
+            "OpenTelemetry.Instrumentation.Runtime": "1.9.0",
+            "Polly": "8.6.4",
+            "Quartz": "3.15.1",
+            "Quartz.Extensions.Hosting": "3.15.1",
+            "Serilog": "4.3.0"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

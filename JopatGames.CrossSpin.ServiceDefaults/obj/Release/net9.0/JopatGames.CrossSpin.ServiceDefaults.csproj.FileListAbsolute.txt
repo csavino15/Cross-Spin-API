@@ -1,0 +1,12 @@
+C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\JopatGames.CrossSpin.ServiceDefaults\bin\Release\net9.0\JopatGames.CrossSpin.ServiceDefaults.deps.json
+C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\JopatGames.CrossSpin.ServiceDefaults\bin\Release\net9.0\JopatGames.CrossSpin.ServiceDefaults.dll
+C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\JopatGames.CrossSpin.ServiceDefaults\bin\Release\net9.0\JopatGames.CrossSpin.ServiceDefaults.pdb
+C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\JopatGames.CrossSpin.ServiceDefaults\obj\Release\net9.0\JopatGames.CrossSpin.ServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\JopatGames.CrossSpin.ServiceDefaults\obj\Release\net9.0\JopatGames.CrossSpin.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\JopatGames.CrossSpin.ServiceDefaults\obj\Release\net9.0\JopatGames.CrossSpin.ServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\JopatGames.CrossSpin.ServiceDefaults\obj\Release\net9.0\JopatGames.CrossSpin.ServiceDefaults.AssemblyInfo.cs
+C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\JopatGames.CrossSpin.ServiceDefaults\obj\Release\net9.0\JopatGames.CrossSpin.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\JopatGames.CrossSpin.ServiceDefaults\obj\Release\net9.0\JopatGames.CrossSpin.ServiceDefaults.dll
+C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\JopatGames.CrossSpin.ServiceDefaults\obj\Release\net9.0\refint\JopatGames.CrossSpin.ServiceDefaults.dll
+C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\JopatGames.CrossSpin.ServiceDefaults\obj\Release\net9.0\JopatGames.CrossSpin.ServiceDefaults.pdb
+C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\JopatGames.CrossSpin.ServiceDefaults\obj\Release\net9.0\ref\JopatGames.CrossSpin.ServiceDefaults.dll
