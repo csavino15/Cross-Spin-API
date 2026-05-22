@@ -21,6 +21,6 @@ internal sealed class LevelRepository(HybridCache cache, IFileDownloader fileDow
     public async Task<Level?> GetLevelForDate(DateOnly dateForLevel, CancellationToken cancellationToken = default)
     {
         IEnumerable<Level> levels = await GetAllLevels(cancellationToken);
-        return levels.FirstOrDefault(level => level.Date == dateTimeProvider.UtcNow.Date);
+        return levels.FirstOrDefault(level => level.Date == dateForLevel.ToDateTime(TimeOnly.MinValue).Date);
     }
 }
