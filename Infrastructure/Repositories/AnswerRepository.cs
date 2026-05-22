@@ -1,34 +1,71 @@
 using Domain.Answers;
-using StackExchange.Redis;
+using Microsoft.Extensions.Caching.Distributed;
+using System.Text.Json;
 
 namespace Infrastructure.Repositories;
 
-internal sealed class AnswerRepository(IConnectionMultiplexer redis) : IAnswerRepository
+internal sealed class AnswerRepository(IDistributedCache cache) : IAnswerRepository
 {
     public async Task SubmitAnswersAsync(string date, string category, string word, CancellationToken cancellationToken = default)
     {
-        IDatabase db = redis.GetDatabase();
         string key = $"answers:{date}:{category}";
-        await db.SortedSetIncrementAsync(key, word, 1);
-        await db.KeyExpireAsync(key, TimeSpan.FromDays(2));
+        var existing = await cache.GetStringAsync(key, cancellationToken);
+        Dictionary<string, int> counts = existing != null
+            ? JsonSerializer.Deserialize<Dictionary<string, int>>(existing) ?? new()
+            : new();
+
+        counts[word] = counts.TryGetValue(word, out int count) ? count + 1 : 1;
+
+        var options = new DistributedCacheEntryOptions
+        {
+            AbsoluteExpirationRelativeToNow = TimeSpan.FromDays(2)
+        };
+        await cache.SetStringAsync(key, JsonSerializer.Serialize(counts), options, cancellationToken);
     }
 
     public async Task<Dictionary<string, List<(string Word, int Count)>>> GetTopAnswersAsync(string date, int topN = 3, CancellationToken cancellationToken = default)
     {
-        IDatabase db = redis.GetDatabase();
-        IServer server = redis.GetServer(redis.GetEndPoints()[0]);
-
         var result = new Dictionary<string, List<(string Word, int Count)>>();
+        // We need to store category keys separately so we can look them up
+        string indexKey = $"answers:{date}:_index";
+        var indexData = await cache.GetStringAsync(indexKey, cancellationToken);
+        List<string> categories = indexData != null
+            ? JsonSerializer.Deserialize<List<string>>(indexData) ?? new()
+            : new();
 
-        var keys = server.Keys(pattern: $"answers:{date}:*");
-
-        foreach (var key in keys)
+        foreach (var category in categories)
         {
-            string category = key.ToString().Replace($"answers:{date}:", "");
-            var entries = await db.SortedSetRangeByRankWithScoresAsync(key, 0, topN - 1, Order.Descending);
-            result[category] = entries.Select(e => (e.Element.ToString(), (int)e.Score)).ToList();
+            string key = $"answers:{date}:{category}";
+            var data = await cache.GetStringAsync(key, cancellationToken);
+            if (data == null) continue;
+
+            var counts = JsonSerializer.Deserialize<Dictionary<string, int>>(data) ?? new();
+            result[category] = counts
+                .OrderByDescending(kvp => kvp.Value)
+                .Take(topN)
+                .Select(kvp => (kvp.Key, kvp.Value))
+                .ToList();
         }
 
         return result;
+    }
+
+    public async Task TrackCategoryAsync(string date, string category, CancellationToken cancellationToken = default)
+    {
+        string indexKey = $"answers:{date}:_index";
+        var indexData = await cache.GetStringAsync(indexKey, cancellationToken);
+        List<string> categories = indexData != null
+            ? JsonSerializer.Deserialize<List<string>>(indexData) ?? new()
+            : new();
+
+        if (!categories.Contains(category))
+        {
+            categories.Add(category);
+            var options = new DistributedCacheEntryOptions
+            {
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromDays(2)
+            };
+            await cache.SetStringAsync(indexKey, JsonSerializer.Serialize(categories), options, cancellationToken);
+        }
     }
 }
