@@ -1,5 +1,7 @@
 ﻿using Application.Abstractions.Clock;
 using Domain.Levels;
+using Domain.Answers;
+using Infrastructure.Repositories;
 using Infrastructure.Clock;
 using Infrastructure.Files;
 using Infrastructure.Jobs.ResetLeaderboard;
@@ -48,6 +50,7 @@ public static class InfrastructureDependencyInjection
     {
         services.AddScoped<ILevelCategoryRepository, LevelCategoryRepository>();
         services.AddScoped<ILevelRepository, LevelRepository>();
+        services.AddScoped<IAnswerRepository, AnswerRepository>();
     }
 
     private static void Configure(IServiceCollection services, IConfiguration configuration)
