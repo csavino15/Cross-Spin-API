@@ -28,6 +28,6 @@ internal sealed class SubmitAnswersEndpoint : IEndpoint
     }
 }
 
-public record SubmitAnswersRequest(
+internal record SubmitAnswersRequest(
     string Date,
     Dictionary<string, string> CategoryAnswers);

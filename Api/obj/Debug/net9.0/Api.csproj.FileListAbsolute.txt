@@ -114,3 +114,12 @@ C:/Users/kevin/Documents/OTBG/Clients/BRE1/CrossSpin/Projects/Backend/JopatGames
 /Users/christophersavino/Cross-Spin-API/Api/obj/Debug/net9.0/Api.dll
 /Users/christophersavino/Cross-Spin-API/Api/obj/Debug/net9.0/refint/Api.dll
 /Users/christophersavino/Cross-Spin-API/Api/obj/Debug/net9.0/Api.pdb
+/Users/christophersavino/Cross-Spin-API/Api/obj/Debug/net9.0/Api.csproj.AssemblyReference.cache
+/Users/christophersavino/Cross-Spin-API/Api/obj/Debug/net9.0/rpswa.dswa.cache.json
+/Users/christophersavino/Cross-Spin-API/Api/obj/Debug/net9.0/Api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christophersavino/Cross-Spin-API/Api/obj/Debug/net9.0/Api.AssemblyInfoInputs.cache
+/Users/christophersavino/Cross-Spin-API/Api/obj/Debug/net9.0/Api.AssemblyInfo.cs
+/Users/christophersavino/Cross-Spin-API/Api/obj/Debug/net9.0/Api.csproj.CoreCompileInputs.cache
+/Users/christophersavino/Cross-Spin-API/Api/obj/Debug/net9.0/Api.MvcApplicationPartsAssemblyInfo.cs
+/Users/christophersavino/Cross-Spin-API/Api/obj/Debug/net9.0/Api.MvcApplicationPartsAssemblyInfo.cache
+/Users/christophersavino/Cross-Spin-API/Api/obj/Debug/net9.0/Api.sourcelink.json
