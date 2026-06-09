@@ -12,7 +12,7 @@ internal sealed class SubmitAnswersCommandHandler(
         foreach (var (category, word) in request.CategoryAnswers)
         {
             await answerRepository.TrackCategoryAsync(request.Date, category, cancellationToken);
-            await answerRepository.SubmitAnswersAsync(request.Date, category, word.ToUpper(), cancellationToken);
+            await answerRepository.SubmitAnswersAsync(request.Date, category, word.ToUpperInvariant(), cancellationToken);
         }
 
         return Result.Success();

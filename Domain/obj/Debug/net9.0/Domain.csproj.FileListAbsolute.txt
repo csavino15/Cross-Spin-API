@@ -19,3 +19,7 @@ C:/Users/kevin/Documents/OTBG/Clients/BRE1/CrossSpin/Projects/Backend/JopatGames
 /Users/christophersavino/Cross-Spin-API/Domain/obj/Debug/net9.0/Domain.dll
 /Users/christophersavino/Cross-Spin-API/Domain/obj/Debug/net9.0/refint/Domain.dll
 /Users/christophersavino/Cross-Spin-API/Domain/obj/Debug/net9.0/Domain.pdb
+/Users/christophersavino/Cross-Spin-API/Domain/bin/Debug/net9.0/Domain.deps.json
+/Users/christophersavino/Cross-Spin-API/Domain/bin/Debug/net9.0/Domain.dll
+/Users/christophersavino/Cross-Spin-API/Domain/bin/Debug/net9.0/Domain.pdb
+/Users/christophersavino/Cross-Spin-API/Domain/obj/Debug/net9.0/ref/Domain.dll

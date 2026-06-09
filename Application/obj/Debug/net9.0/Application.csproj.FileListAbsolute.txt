@@ -16,3 +16,9 @@ C:/Users/kevin/Documents/OTBG/Clients/BRE1/CrossSpin/Projects/Backend/JopatGames
 /Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/Application.dll
 /Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/refint/Application.dll
 /Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/Application.pdb
+/Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/Application.csproj.AssemblyReference.cache
+/Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/Application.AssemblyInfoInputs.cache
+/Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/Application.AssemblyInfo.cs
+/Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/Application.csproj.CoreCompileInputs.cache
+/Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/Application.sourcelink.json
