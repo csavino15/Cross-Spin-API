@@ -6,3 +6,5 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Usage", "CA2225:Operator overloads have named alternates", Justification = "<Pending>", Scope = "member", Target = "~M:Domain.Abstractions.Result`1.op_Implicit(`0)~Domain.Abstractions.Result{`0}")]
+[assembly: SuppressMessage("Design", "CA1040:Avoid empty interfaces", Justification = "Marker interface by design", Scope = "type", Target = "~T:Domain.Abstractions.IDomainEvent")]
+[assembly: SuppressMessage("Design", "CA1030:Consider making 'RaiseDomainEvent' an event", Justification = "Domain event raising method by design", Scope = "member", Target = "~M:Domain.Abstractions.Entity.RaiseDomainEvent(Domain.Abstractions.IDomainEvent)")]
