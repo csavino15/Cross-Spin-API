@@ -1,5 +1,5 @@
 using Application.Abstractions.Messaging;
-using Application.Levels.Today;
+using Application.Levels;
 using Domain.Abstractions;
 using Domain.Levels;
 
