@@ -6,4 +6,5 @@ using System.Diagnostics.CodeAnalysis;
 [assembly: SuppressMessage("Design", "CA1812:Avoid uninstantiated internal classes", Justification = "Instantiated via dependency injection")]
 [assembly: SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait", Justification = "ASP.NET Core does not require ConfigureAwait")]
 [assembly: SuppressMessage("Design", "CA1031:Catch more specific exception", Justification = "Intentional catch-all in middleware")]
+[assembly: SuppressMessage("Performance", "CA1848:Use LoggerMessage delegates", Justification = "Pending optimization")]
 [assembly: SuppressMessage("Design", "CA1515:Consider making types internal", Justification = "Public record required for model binding")]
