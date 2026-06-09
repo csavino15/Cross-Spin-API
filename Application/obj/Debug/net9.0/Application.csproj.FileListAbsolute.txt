@@ -22,3 +22,10 @@ C:/Users/kevin/Documents/OTBG/Clients/BRE1/CrossSpin/Projects/Backend/JopatGames
 /Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/Application.AssemblyInfo.cs
 /Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/Application.csproj.CoreCompileInputs.cache
 /Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/Application.sourcelink.json
+/Users/christophersavino/Cross-Spin-API/Application/bin/Debug/net9.0/Application.deps.json
+/Users/christophersavino/Cross-Spin-API/Application/bin/Debug/net9.0/Application.dll
+/Users/christophersavino/Cross-Spin-API/Application/bin/Debug/net9.0/Application.pdb
+/Users/christophersavino/Cross-Spin-API/Application/bin/Debug/net9.0/Domain.dll
+/Users/christophersavino/Cross-Spin-API/Application/bin/Debug/net9.0/Domain.pdb
+/Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/Applicat.44B5EDA2.Up2Date
+/Users/christophersavino/Cross-Spin-API/Application/obj/Debug/net9.0/ref/Application.dll

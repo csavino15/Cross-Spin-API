@@ -5,7 +5,6 @@ using Infrastructure.Repositories;
 using Infrastructure.Clock;
 using Infrastructure.Files;
 using Infrastructure.Jobs.ResetLeaderboard;
-using Infrastructure.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Polly;
