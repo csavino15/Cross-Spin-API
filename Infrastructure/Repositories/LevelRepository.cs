@@ -5,7 +5,7 @@ using Infrastructure.Levels;
 using Microsoft.Extensions.Caching.Hybrid;
 
 namespace Infrastructure.Repositories;
-internal sealed class LevelRepository(HybridCache cache, IFileDownloader fileDownloader, IDateTimeProvider dateTimeProvider) : ILevelRepository
+internal sealed class LevelRepository(HybridCache cache, IFileDownloader fileDownloader) : ILevelRepository
 {
     private const string DAILY_LEVELS_FILENAME = "BRE1-Levels-Daily.csv";
 
