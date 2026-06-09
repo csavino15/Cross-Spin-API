@@ -6,9 +6,9 @@ namespace Infrastructure.Repositories;
 
 internal sealed class AnswerRepository(IDistributedCache cache) : IAnswerRepository
 {
-    public async Task SubmitAnswersAsync(string date, string category, string word, CancellationToken cancellationToken = default)
+    public async Task SubmitAnswersAsync(string puzzleDate, string category, string word, CancellationToken cancellationToken = default)
     {
-        string key = $"answers:{date}:{category}";
+        string key = $"answers:{puzzleDate}:{category}";
         var existing = await cache.GetStringAsync(key, cancellationToken);
         Dictionary<string, int> counts = existing != null
             ? JsonSerializer.Deserialize<Dictionary<string, int>>(existing) ?? new()
@@ -23,11 +23,10 @@ internal sealed class AnswerRepository(IDistributedCache cache) : IAnswerReposit
         await cache.SetStringAsync(key, JsonSerializer.Serialize(counts), options, cancellationToken);
     }
 
-    public async Task<Dictionary<string, List<(string Word, int Count)>>> GetTopAnswersAsync(string date, int topN = 3, CancellationToken cancellationToken = default)
+    public async Task<Dictionary<string, List<(string Word, int Count)>>> GetTopAnswersAsync(string puzzleDate, int topN = 3, CancellationToken cancellationToken = default)
     {
         var result = new Dictionary<string, List<(string Word, int Count)>>();
-        // We need to store category keys separately so we can look them up
-        string indexKey = $"answers:{date}:_index";
+        string indexKey = $"answers:{puzzleDate}:_index";
         var indexData = await cache.GetStringAsync(indexKey, cancellationToken);
         List<string> categories = indexData != null
             ? JsonSerializer.Deserialize<List<string>>(indexData) ?? new()
@@ -35,7 +34,7 @@ internal sealed class AnswerRepository(IDistributedCache cache) : IAnswerReposit
 
         foreach (var category in categories)
         {
-            string key = $"answers:{date}:{category}";
+            string key = $"answers:{puzzleDate}:{category}";
             var data = await cache.GetStringAsync(key, cancellationToken);
             if (data == null) continue;
 
@@ -50,9 +49,9 @@ internal sealed class AnswerRepository(IDistributedCache cache) : IAnswerReposit
         return result;
     }
 
-    public async Task TrackCategoryAsync(string date, string category, CancellationToken cancellationToken = default)
+    public async Task TrackCategoryAsync(string puzzleDate, string category, CancellationToken cancellationToken = default)
     {
-        string indexKey = $"answers:{date}:_index";
+        string indexKey = $"answers:{puzzleDate}:_index";
         var indexData = await cache.GetStringAsync(indexKey, cancellationToken);
         List<string> categories = indexData != null
             ? JsonSerializer.Deserialize<List<string>>(indexData) ?? new()
