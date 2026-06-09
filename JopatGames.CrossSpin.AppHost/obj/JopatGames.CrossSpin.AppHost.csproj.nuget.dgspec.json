@@ -1,33 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\JopatGames.CrossSpin.AppHost\\JopatGames.CrossSpin.AppHost.csproj": {}
+    "/Users/christophersavino/Cross-Spin-API/JopatGames.CrossSpin.AppHost/JopatGames.CrossSpin.AppHost.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\JopatGames.CrossSpin.AppHost\\JopatGames.CrossSpin.AppHost.csproj": {
+    "/Users/christophersavino/Cross-Spin-API/JopatGames.CrossSpin.AppHost/JopatGames.CrossSpin.AppHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\JopatGames.CrossSpin.AppHost\\JopatGames.CrossSpin.AppHost.csproj",
+        "projectUniqueName": "/Users/christophersavino/Cross-Spin-API/JopatGames.CrossSpin.AppHost/JopatGames.CrossSpin.AppHost.csproj",
         "projectName": "JopatGames.CrossSpin.AppHost",
-        "projectPath": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\JopatGames.CrossSpin.AppHost\\JopatGames.CrossSpin.AppHost.csproj",
-        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\JopatGames.CrossSpin.AppHost\\obj\\",
+        "projectPath": "/Users/christophersavino/Cross-Spin-API/JopatGames.CrossSpin.AppHost/JopatGames.CrossSpin.AppHost.csproj",
+        "packagesPath": "/Users/christophersavino/.nuget/packages/",
+        "outputPath": "/Users/christophersavino/Cross-Spin-API/JopatGames.CrossSpin.AppHost/obj/",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/christophersavino/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,7 +46,7 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Aspire.Dashboard.Sdk.win-x64": {
+            "Aspire.Dashboard.Sdk.osx-arm64": {
               "target": "Package",
               "version": "[9.4.1, )",
               "autoReferenced": true
@@ -63,7 +56,7 @@
               "version": "[9.4.1, )",
               "versionCentrallyManaged": true
             },
-            "Aspire.Hosting.Orchestration.win-x64": {
+            "Aspire.Hosting.Orchestration.osx-arm64": {
               "target": "Package",
               "version": "[9.4.1, )",
               "autoReferenced": true
@@ -90,11 +83,11 @@
             "Microsoft.Extensions.Http.Resilience": "9.0.0",
             "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.8",
             "Microsoft.Extensions.ServiceDiscovery": "9.0.0",
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.9.0",
-            "OpenTelemetry.Extensions.Hosting": "1.9.0",
-            "OpenTelemetry.Instrumentation.AspNetCore": "1.9.0",
-            "OpenTelemetry.Instrumentation.Http": "1.9.0",
-            "OpenTelemetry.Instrumentation.Runtime": "1.9.0",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
+            "OpenTelemetry.Extensions.Hosting": "1.15.3",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.2",
+            "OpenTelemetry.Instrumentation.Http": "1.15.1",
+            "OpenTelemetry.Instrumentation.Runtime": "1.15.1",
             "Polly": "8.6.4",
             "Quartz": "3.15.1",
             "Quartz.Extensions.Hosting": "3.15.1",
@@ -116,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.314/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

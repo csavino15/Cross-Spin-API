@@ -1,41 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Infrastructure\\Infrastructure.csproj": {}
+    "/Users/christophersavino/Cross-Spin-API/Infrastructure/Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Application\\Application.csproj": {
+    "/Users/christophersavino/Cross-Spin-API/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Application\\Application.csproj",
+        "projectUniqueName": "/Users/christophersavino/Cross-Spin-API/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Application\\obj\\",
+        "projectPath": "/Users/christophersavino/Cross-Spin-API/Application/Application.csproj",
+        "packagesPath": "/Users/christophersavino/.nuget/packages/",
+        "outputPath": "/Users/christophersavino/Cross-Spin-API/Application/obj/",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/christophersavino/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Domain\\Domain.csproj"
+              "/Users/christophersavino/Cross-Spin-API/Domain/Domain.csproj": {
+                "projectPath": "/Users/christophersavino/Cross-Spin-API/Domain/Domain.csproj"
               }
             }
           }
@@ -94,11 +87,11 @@
             "Microsoft.Extensions.Http.Resilience": "9.0.0",
             "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.8",
             "Microsoft.Extensions.ServiceDiscovery": "9.0.0",
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.9.0",
-            "OpenTelemetry.Extensions.Hosting": "1.9.0",
-            "OpenTelemetry.Instrumentation.AspNetCore": "1.9.0",
-            "OpenTelemetry.Instrumentation.Http": "1.9.0",
-            "OpenTelemetry.Instrumentation.Runtime": "1.9.0",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
+            "OpenTelemetry.Extensions.Hosting": "1.15.3",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.2",
+            "OpenTelemetry.Instrumentation.Http": "1.15.1",
+            "OpenTelemetry.Instrumentation.Runtime": "1.15.1",
             "Polly": "8.6.4",
             "Quartz": "3.15.1",
             "Quartz.Extensions.Hosting": "3.15.1",
@@ -120,39 +113,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.314/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Domain\\Domain.csproj": {
+    "/Users/christophersavino/Cross-Spin-API/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Domain\\Domain.csproj",
+        "projectUniqueName": "/Users/christophersavino/Cross-Spin-API/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Domain\\obj\\",
+        "projectPath": "/Users/christophersavino/Cross-Spin-API/Domain/Domain.csproj",
+        "packagesPath": "/Users/christophersavino/.nuget/packages/",
+        "outputPath": "/Users/christophersavino/Cross-Spin-API/Domain/obj/",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/christophersavino/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -200,11 +181,11 @@
             "Microsoft.Extensions.Http.Resilience": "9.0.0",
             "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.8",
             "Microsoft.Extensions.ServiceDiscovery": "9.0.0",
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.9.0",
-            "OpenTelemetry.Extensions.Hosting": "1.9.0",
-            "OpenTelemetry.Instrumentation.AspNetCore": "1.9.0",
-            "OpenTelemetry.Instrumentation.Http": "1.9.0",
-            "OpenTelemetry.Instrumentation.Runtime": "1.9.0",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
+            "OpenTelemetry.Extensions.Hosting": "1.15.3",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.2",
+            "OpenTelemetry.Instrumentation.Http": "1.15.1",
+            "OpenTelemetry.Instrumentation.Runtime": "1.15.1",
             "Polly": "8.6.4",
             "Quartz": "3.15.1",
             "Quartz.Extensions.Hosting": "3.15.1",
@@ -226,50 +207,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.314/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Infrastructure\\Infrastructure.csproj": {
+    "/Users/christophersavino/Cross-Spin-API/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "/Users/christophersavino/Cross-Spin-API/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Infrastructure\\obj\\",
+        "projectPath": "/Users/christophersavino/Cross-Spin-API/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/christophersavino/.nuget/packages/",
+        "outputPath": "/Users/christophersavino/Cross-Spin-API/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/christophersavino/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Application\\Application.csproj"
+              "/Users/christophersavino/Cross-Spin-API/Application/Application.csproj": {
+                "projectPath": "/Users/christophersavino/Cross-Spin-API/Application/Application.csproj"
               },
-              "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\kevin\\Documents\\OTBG\\Clients\\BRE1\\CrossSpin\\Projects\\Backend\\JopatGames.CrossSpin\\Domain\\Domain.csproj"
+              "/Users/christophersavino/Cross-Spin-API/Domain/Domain.csproj": {
+                "projectPath": "/Users/christophersavino/Cross-Spin-API/Domain/Domain.csproj"
               }
             }
           }
@@ -348,11 +317,11 @@
             "Microsoft.Extensions.Http.Resilience": "9.0.0",
             "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.8",
             "Microsoft.Extensions.ServiceDiscovery": "9.0.0",
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.9.0",
-            "OpenTelemetry.Extensions.Hosting": "1.9.0",
-            "OpenTelemetry.Instrumentation.AspNetCore": "1.9.0",
-            "OpenTelemetry.Instrumentation.Http": "1.9.0",
-            "OpenTelemetry.Instrumentation.Runtime": "1.9.0",
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.3",
+            "OpenTelemetry.Extensions.Hosting": "1.15.3",
+            "OpenTelemetry.Instrumentation.AspNetCore": "1.15.2",
+            "OpenTelemetry.Instrumentation.Http": "1.15.1",
+            "OpenTelemetry.Instrumentation.Runtime": "1.15.1",
             "Polly": "8.6.4",
             "Quartz": "3.15.1",
             "Quartz.Extensions.Hosting": "3.15.1",
@@ -374,12 +343,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.314/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
