@@ -16,7 +16,7 @@ internal sealed class GetTopAnswersEndpoint : IEndpoint
             CancellationToken cancellationToken = default) =>
         {
             Result<TopAnswersDTO> result = await sender.Send(
-                new GetTopAnswersQuery(date),
+                new GetTopAnswersQuery(date, top),
                 cancellationToken);
 
             if (result.IsFailure)
