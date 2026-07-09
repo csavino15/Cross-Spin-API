@@ -9,7 +9,7 @@ internal sealed class GetTopAnswersQueryHandler(
 {
     public async Task<Result<TopAnswersDTO>> Handle(GetTopAnswersQuery request, CancellationToken cancellationToken)
     {
-        var topAnswers = await answerRepository.GetTopAnswersAsync(request.Date, 3, cancellationToken);
+        var topAnswers = await answerRepository.GetTopAnswersAsync(request.Date, request.Top, cancellationToken);
 
         if (topAnswers == null || topAnswers.Count == 0)
             return Result.Failure<TopAnswersDTO>(AnswerErrors.NotFound);

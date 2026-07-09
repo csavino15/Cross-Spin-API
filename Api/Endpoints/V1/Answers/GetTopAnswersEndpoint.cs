@@ -11,6 +11,7 @@ internal sealed class GetTopAnswersEndpoint : IEndpoint
     {
         app.MapGet("answers/{date}", async (
             string date,
+            int top = 3,
             ISender sender,
             CancellationToken cancellationToken = default) =>
         {

@@ -10,5 +10,5 @@ public class JopatGames_CrossSpin_AppHost
 #pragma warning restore CS8981
 {
     private JopatGames_CrossSpin_AppHost() { }
-    public static string ProjectPath => """C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\JopatGames.CrossSpin.AppHost""";
+    public static string ProjectPath => """/Users/christophersavino/Cross-Spin-API/JopatGames.CrossSpin.AppHost""";
 }

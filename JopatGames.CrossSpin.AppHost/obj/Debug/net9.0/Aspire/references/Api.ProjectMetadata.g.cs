@@ -9,5 +9,5 @@ namespace Projects;
 public class Api : global::Aspire.Hosting.IProjectMetadata
 #pragma warning restore CS8981
 {
-    public string ProjectPath => """C:\Users\kevin\Documents\OTBG\Clients\BRE1\CrossSpin\Projects\Backend\JopatGames.CrossSpin\Api\Api.csproj""";
+    public string ProjectPath => """/Users/christophersavino/Cross-Spin-API/Api/Api.csproj""";
 }
