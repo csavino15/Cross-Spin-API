@@ -25,7 +25,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JopatGames.CrossSpin.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54a6bab8a0658320f23be4edd26f9c8fb646eb2a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03d2f3f691f65a18c284fef264baa4fa77ed2b9a")]
 [assembly: System.Reflection.AssemblyProductAttribute("JopatGames.CrossSpin.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JopatGames.CrossSpin.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
