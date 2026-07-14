@@ -16,7 +16,9 @@ internal sealed class TrackVisitorEndpoint : IEndpoint
             IDistributedCache cache,
             CancellationToken cancellationToken = default) =>
         {
-            var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+            var cst = TimeZoneInfo.FindSystemTimeZoneById("America/Chicago");
+            var today = DateOnly.FromDateTime(TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, cst))
+                .ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
             var key = $"visitors:{today}";
 
             var existing = await cache.GetStringAsync(key, cancellationToken);
@@ -42,7 +44,9 @@ internal sealed class TrackVisitorEndpoint : IEndpoint
             IDistributedCache cache,
             CancellationToken cancellationToken = default) =>
         {
-            var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+            var cst = TimeZoneInfo.FindSystemTimeZoneById("America/Chicago");
+            var today = DateOnly.FromDateTime(TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, cst))
+                .ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
             var key = $"visitors:{today}";
 
             var existing = await cache.GetStringAsync(key, cancellationToken);
