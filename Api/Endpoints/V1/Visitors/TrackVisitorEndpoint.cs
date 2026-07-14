@@ -1,6 +1,8 @@
 using Api.Abstractions;
+using Asp.Versioning;
 using Microsoft.Extensions.Caching.Distributed;
 using System.Text.Json;
+using System.Globalization;
 
 namespace Api.Endpoints.V1.Visitors;
 
@@ -13,7 +15,7 @@ internal sealed class TrackVisitorEndpoint : IEndpoint
             IDistributedCache cache,
             CancellationToken cancellationToken = default) =>
         {
-            var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+            var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
             var key = $"visitors:{today}";
 
             var existing = await cache.GetStringAsync(key, cancellationToken);
@@ -32,6 +34,6 @@ internal sealed class TrackVisitorEndpoint : IEndpoint
             return Results.Ok(new { count = ids.Count });
         })
         .WithTags("Visitors")
-        .MapToApiVersion(1);
+        .MapToApiVersion(new ApiVersion(1));
     }
 }
