@@ -5,6 +5,7 @@ using Infrastructure.Repositories;
 using Infrastructure.Clock;
 using Infrastructure.Files;
 using Infrastructure.Jobs.ResetLeaderboard;
+using Infrastructure.Jobs.AwardMedals;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Polly;
@@ -37,6 +38,7 @@ public static class InfrastructureDependencyInjection
         services.AddQuartzHostedService(options => options.WaitForJobsToComplete = true);
 
         services.ConfigureOptions<ResetLeaderboardJobSetup>();
+        services.ConfigureOptions<AwardMedalsJobSetup>();
     }
 
     private static void AddServices(IServiceCollection services)
@@ -61,15 +63,16 @@ public static class InfrastructureDependencyInjection
     private static void AddPolly(IServiceCollection services)
     {
         services.AddHttpClient<ResetLeaderboardJob>();
+        services.AddHttpClient<AwardMedalsJob>();
     }
 
     private static AsyncRetryPolicy<HttpResponseMessage> GetRetryPolicy()
     {
         return HttpPolicyExtensions
-            .HandleTransientHttpError() // Handles 5xx, 408 and HttpRequestException
+            .HandleTransientHttpError()
             .WaitAndRetryAsync(
                 retryCount: 3,
-                sleepDurationProvider: attempt => TimeSpan.FromSeconds(Math.Pow(2, attempt)), // 2s, 4s, 8s
+                sleepDurationProvider: attempt => TimeSpan.FromSeconds(Math.Pow(2, attempt)),
                 onRetry: (outcome, timespan, attempt, context) =>
                 {
                     Console.WriteLine($"Retry {attempt} after {timespan.TotalSeconds}s due to: " +
