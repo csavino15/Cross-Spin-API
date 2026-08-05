@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JopatGames.CrossSpin.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+031a73f4059706e9cbeab7a271405a4bf1ff0cf9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4702f2dac07e4bb7614db25dab7a58d1461dc83e")]
 [assembly: System.Reflection.AssemblyProductAttribute("JopatGames.CrossSpin.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JopatGames.CrossSpin.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
