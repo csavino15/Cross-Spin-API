@@ -13,8 +13,8 @@ internal sealed class LevelRepository(HybridCache cache, IFileDownloader fileDow
     {
         string content = await cache.GetOrCreateAsync(DAILY_LEVELS_FILENAME, async (ct) =>
         {
-            return await fileDownloader.GetFileContentsAsString(DAILY_LEVELS_FILENAME, cancellationToken);
-        }, cancellationToken: cancellationToken);
+            return await fileDownloader.GetFileContentsAsString(DAILY_LEVELS_FILENAME, ct);
+        }, cancellationToken: CancellationToken.None);
         return LevelParser.Parse(content);
     }
 
